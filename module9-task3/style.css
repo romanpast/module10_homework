@@ -103,3 +103,12 @@ main {
     margin: 10px;
     background: var(--blue);
 }
+
+.ws_message {
+    justify-self: left;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background: var(--blue);
+}
