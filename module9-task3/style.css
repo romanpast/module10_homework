@@ -63,6 +63,7 @@ main {
 
 .messenger {
     display: grid;
+    grid-auto-rows: max-content;
     height: 400px;
     margin: 10px auto;
     border: 4px solid var(--blue);
@@ -96,6 +97,7 @@ main {
   }
 
 .client_message {
+    height:fit-content;
     justify-self: right;
     width: fit-content;
     padding: 10px 15px;
@@ -105,6 +107,7 @@ main {
 }
 
 .ws_message {
+    height:fit-content;
     justify-self: left;
     width: fit-content;
     padding: 10px 15px;

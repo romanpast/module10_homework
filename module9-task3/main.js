@@ -40,9 +40,10 @@ function getLocationAndCreateDiv() {
         fetch(url)
           .then(response => response.json())
           .then(data => {
+            let country = data.results[0].components.country
             var city = data.results[0].components.town || data.results[0].components.city || data.results[0].components.state_district;
             var div = document.createElement("div");
-            div.innerHTML = "I am in: " + city;
+            div.innerHTML = "I am in " + city + ", " + country;
             div.classList.add("client_message");
             messageBox.appendChild(div);
           });
